@@ -1,4 +1,4 @@
-@import "../../../node_modules/normalize.css/normalize.css";
+// @import "../../node_modules/normalize.css/normalize";
 
 html{
     box-sizing: border-box;
@@ -35,6 +35,10 @@ body{
     @extend %сirce-regular;
     font-size: 12px;
     line-height: 18px;
+}
+
+body.lock{
+    overflow: hidden;
 }
 
 .container{

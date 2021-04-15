@@ -59,7 +59,10 @@ body.lock{
 }
 
 .btn{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #fff;
     background-color: #61cb81;
     font-size: 26px;
@@ -68,7 +71,10 @@ body.lock{
 }
 
 .btn-outline{
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: #61cb81;
     background-color: transparent;
     border: 6px solid #61cb81;

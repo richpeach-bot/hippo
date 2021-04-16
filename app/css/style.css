@@ -676,6 +676,7 @@ a {
   color: inherit
 }
 li,
+p,
 ul {
   list-style: none;
   margin: 0;
@@ -741,9 +742,10 @@ body.lock {
   text-align: center;
   color: #fff;
   background-color: #61cb81;
+  height: 61px;
   font-size: 26px;
-  line-height: 30px;
-  padding: 20px 40px
+  line-height: 115.38462%;
+  padding: 0 40px
 }
 .btn-outline {
   display: -webkit-inline-box;
@@ -759,9 +761,10 @@ body.lock {
   color: #61cb81;
   background-color: transparent;
   border: 6px solid #61cb81;
+  height: 61px;
   font-size: 26px;
-  line-height: 30px;
-  padding: 20px 40px
+  line-height: 115.38462%;
+  padding: 0 40px
 }
 .header {
   position: fixed;
@@ -872,15 +875,15 @@ body.lock {
   font-family: Arial,Helvetica,sans-serif;
   font-style: italic
 }
+.link {
+  color: #61cb81;
+  border-bottom: 1px solid #61cb81
+}
 .about {
   padding: 95px 0 105px
 }
 .about__description {
   margin-bottom: 80px
-}
-.about__link {
-  color: #61cb81;
-  border-bottom: 1px solid #61cb81
 }
 .about__stats {
   background-color: #dde7e1
@@ -985,6 +988,37 @@ body.lock {
   left: 79px;
   max-width: 270px
 }
+.our-elephants {
+  padding: 54px 0 74px;
+  text-align: center
+}
+.our-elephants__title {
+  text-align: center;
+  margin-bottom: 76px
+}
+.our-elephants__item {
+  position: relative;
+  margin-bottom: 200px
+}
+.our-elephants__item img {
+  max-height: 800px;
+  width: 100%
+}
+.our-elephants__info {
+  position: absolute;
+  max-width: 588px;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  padding: 67px 62px;
+  bottom: -118px;
+  left: 50%;
+  -webkit-box-shadow: 0 37px 25.5px rgba(119,119,99,.21);
+  box-shadow: 0 37px 25.5px rgba(119,119,99,.21)
+}
+.our-elephants__text {
+  margin-bottom: 43px
+}
 @media (min-width:767px) {
   .header__logo {
     padding-top: 5px
@@ -1043,14 +1077,29 @@ body.lock {
   .about__item {
     min-width: 180px
   }
+  .our-elephants__info {
+    padding: 47px 42px;
+    max-width: 488px
+  }
 }
 @media (max-width:1200px) {
+  .btn {
+    font-size: 20px;
+    padding: 0 35px
+  }
+  .btn-outline {
+    font-size: 20px;
+    padding: 0 35px
+  }
   .hero__title {
     font-size: 50px
   }
   .hero__btn {
     font-size: 20px;
     padding: 0 35px
+  }
+  .our-elephants__title {
+    margin-bottom: 66px
   }
 }
 @media (max-width:1122px) {
@@ -1073,8 +1122,24 @@ body.lock {
     margin-right: 10px;
     width: 180px
   }
+  .our-elephants__title {
+    margin-bottom: 56px
+  }
+  .our-elephants__info {
+    max-width: 388px
+  }
 }
 @media (max-width:1000px) {
+  .btn {
+    font-size: 15px;
+    border: 4px solid #fff;
+    height: 50px
+  }
+  .btn-outline {
+    font-size: 15px;
+    border: 4px solid #61cb81;
+    height: 50px
+  }
   .hero__heading {
     padding: 240px 0 80px
   }
@@ -1087,10 +1152,30 @@ body.lock {
     height: 50px
   }
 }
+@media (max-width:940px) {
+  .our-elephants__item {
+    margin-bottom: 150px
+  }
+  .our-elephants__info {
+    max-width: 288px;
+    padding: 37px 32px;
+    left: 60%;
+    bottom: -80px
+  }
+  .our-elephants__text {
+    margin-bottom: 20px
+  }
+}
 @media (max-width:767px) {
   .title {
     font-size: 25px;
     padding-bottom: 25px
+  }
+  .btn {
+    height: 45px
+  }
+  .btn-outline {
+    height: 45px
   }
   .menu__icon {
     z-index: 5;
@@ -1220,6 +1305,51 @@ body.lock {
     font-size: 60px;
     line-height: 70px
   }
+  .our-elephants {
+    padding: 34px 0 44px
+  }
+  .our-elephants__title {
+    margin-bottom: 40px
+  }
+  .our-elephants__item {
+    margin-bottom: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+  }
+  .our-elephants__item img {
+    width: 50%;
+    -o-object-fit: cover;
+    object-fit: cover
+  }
+  .our-elephants__info {
+    position: static;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 288px;
+    -webkit-box-shadow: 8px 9px 8px rgba(119,119,99,.21);
+    box-shadow: 8px 9px 8px rgba(119,119,99,.21);
+    padding: 27px 22px
+  }
+}
+@media (max-width:576px) {
+  .our-elephants__item img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 15px
+  }
+  .our-elephants__info {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content
+  }
 }
 @media (max-width:400px) {
   .about__item {
@@ -1242,5 +1372,11 @@ body.lock {
   .about__item-num {
     font-size: 40px;
     line-height: 60px
+  }
+  .our-elephants__title {
+    margin-bottom: 25px
+  }
+  .our-elephants__info {
+    padding: 18px
   }
 }

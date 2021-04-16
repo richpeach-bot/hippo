@@ -16,7 +16,8 @@ a {
 }
 
 ul,
-li {
+li,
+p {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -92,9 +93,22 @@ body.lock {
     text-align: center;
     color: #fff;
     background-color: #61cb81;
+    height: 61px;
     font-size: 26px;
-    line-height: 30px;
-    padding: 20px 40px;
+    line-height: 30 / 26 * 100%;
+    padding: 0 40px;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        padding: 0 35px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 15px;
+        border: 4px solid #fff;
+        height: 50px;
+    }
+    @media (max-width: 767px) {
+        height: 45px;
+    }
 }
 
 .btn-outline {
@@ -105,7 +119,20 @@ body.lock {
     color: #61cb81;
     background-color: transparent;
     border: 6px solid #61cb81;
+    height: 61px;
     font-size: 26px;
-    line-height: 30px;
-    padding: 20px 40px;
+    line-height: 30 / 26 * 100%;
+    padding: 0 40px;
+    @media (max-width: 1200px) {
+        font-size: 20px;
+        padding: 0 35px;
+    }
+    @media (max-width: 1000px) {
+        font-size: 15px;
+        border: 4px solid #61cb81;
+        height: 50px;
+    }
+    @media (max-width: 767px) {
+        height: 45px;
+    }
 }

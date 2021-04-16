@@ -92,6 +92,11 @@
     }
 }
 
+.link {
+    color: #61cb81;
+    border-bottom: 1px solid #61cb81;
+}
+
 .about {
     padding: 95px 0 105px;
     @media (max-width: 1122px) {
@@ -114,10 +119,6 @@
         @media (max-width: 320px) {
             margin-bottom: 40px;
         }
-    }
-    &__link {
-        color: #61cb81;
-        border-bottom: 1px solid #61cb81;
     }
     &__stats {
         background-color: #dde7e1;
@@ -260,6 +261,101 @@
             top: 225px;
             left: 79px;
             max-width: 270px;
+        }
+    }
+}
+
+.our-elephants{
+    padding: 54px 0 74px;
+    text-align: center;
+    @media (max-width: 767px) {
+        padding: 34px 0 44px;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 76px;
+        @media (max-width: 1200px) {
+            margin-bottom: 66px;
+        }
+        @media (max-width: 1122px) {
+            margin-bottom: 56px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+        @media (max-width: 320px) {
+            margin-bottom: 25px;
+        }
+    }
+    &__item{
+        position: relative;
+        margin-bottom: 200px;
+        @media (max-width: 940px) {
+            margin-bottom: 150px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 45px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        img {
+            max-height: 800px;
+            width: 100%;
+            @media (max-width: 767px) {
+                width: 50%;
+                object-fit: cover;
+            }
+            @media (max-width: 576px) {
+                width: 100%;
+                object-fit: cover;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &__info{
+        position: absolute;
+        max-width: 588px;
+        background-color: #fff;
+        color: #000;
+        text-align: left;
+        padding: 67px 62px;
+        bottom: -118px;
+        left: 50%;
+        box-shadow: (0px 37px 25.5px rgba(119,119,99,0.21));
+        @media (max-width: 1250px) {
+            padding: 47px 42px;
+            max-width: 488px;
+        }
+        @media (max-width: 1122px) {
+            max-width: 388px;
+        }
+        @media (max-width: 940px) {
+            max-width: 288px;
+            padding: 37px 32px;
+            left: 60%;
+            bottom: -80px;
+        }
+        @media (max-width: 767px) {
+            position: static;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            min-width: 288px;
+            box-shadow: (8px 9px 8px rgba(119,119,99,0.21));
+            padding: 27px 22px;
+        }
+        @media (max-width: 576px) {
+            min-width: fit-content;
+        }
+        @media (max-width: 320px) {
+            padding: 18px;
+        }
+    }
+    &__text{
+        margin-bottom: 43px;
+        @media (max-width: 940px) {
+            margin-bottom: 20px;
         }
     }
 }

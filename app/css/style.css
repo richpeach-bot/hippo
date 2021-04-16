@@ -916,44 +916,45 @@ body.lock {
   width: 600px;
   height: 300px
 }
+.services {
+  padding-bottom: 54px;
+  text-align: center
+}
 .services__description {
   margin-bottom: 52px
+}
+.services__cards {
+  margin-bottom: 75px
 }
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between
+  flex-wrap: wrap
 }
 .cards__card {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1
+  flex-grow: 1
 }
-.cards__card-inner {
-  position: relative;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  width: 604px;
-  height: 514px
+.cards__img {
+  position: relative
 }
-.cards__card-inner:hover .cards__hover {
-  opacity: 1;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s
+.cards__img img {
+  display: block;
+  width: 100%;
+  height: 600px
+}
+.cards__img:hover .cards__hover {
+  bottom: 0;
+  height: 100%
 }
 .cards__title {
   color: #fff;
   font-size: 51px;
   line-height: 74.5098%;
+  text-align: left;
   position: absolute;
   top: 91px;
   left: 81px;
@@ -962,18 +963,23 @@ body.lock {
 }
 .cards__hover {
   width: 100%;
-  height: 100%;
+  height: 0;
   background-color: rgba(135,231,165,.7);
+  overflow: hidden;
   position: absolute;
-  top: 0;
+  bottom: 100%;
   left: 0;
+  right: 0;
   z-index: 4;
-  opacity: 0
+  -webkit-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease
 }
 .cards__hover-text {
   color: #fff;
   font-size: 14px;
   line-height: 25px;
+  text-align: left;
   position: absolute;
   top: 225px;
   left: 79px;

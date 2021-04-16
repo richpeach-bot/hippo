@@ -140,11 +140,14 @@
                 margin-right: 40px;
                 padding: 10px 0;
             }
-            @media (max-width: 767px) {
-                margin-bottom: 30px;
+            @media (min-width: 1000px) {
+                margin-right: 65px;
             }
             @media (min-width: 1200px) {
                 margin-right: 85px;
+            }
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
             }
         }
         &-link {

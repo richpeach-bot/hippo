@@ -1,20 +1,22 @@
 // @import "../../node_modules/normalize.css/normalize";
 
-html{
+html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
 ul,
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -25,40 +27,58 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     margin: 0;
     font-size: inherit;
+    font-weight: inherit;
 }
-body{
+body {
     color: #362c2d;
-    background-color: #fbfbf7;
+    // background-color: #fbfbf7;
+    background-color: #fff;
     @extend %сirce-regular;
     font-size: 12px;
     line-height: 18px;
 }
 
-body.lock{
+body.lock {
     overflow: hidden;
 }
 
-.container{
+.container {
     max-width: 1280px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
-.container-larger{
+.container-larger {
     max-width: 1520px;
     padding: 0 20px;
     margin: 0 auto;
 }
 
-.title{
+.title {
     font-size: 36px;
-    line-height: 42px;
+    line-height: 38 / 36 * 100%;
+    padding-bottom: 40px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 143px;
+        background-color: #61cb81;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media (max-width: 767px) {
+        font-size: 25px;
+        padding-bottom: 25px;
+    }
 }
 
-.btn{
+.btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +90,7 @@ body.lock{
     padding: 20px 40px;
 }
 
-.btn-outline{
+.btn-outline {
     display: inline-flex;
     align-items: center;
     justify-content: center;

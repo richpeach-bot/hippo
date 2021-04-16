@@ -10,10 +10,13 @@
         justify-content: space-between;
         align-items: center;
         min-height: 63px;
-        padding-top: 13px;
+        padding: 8px 0;
     }
     &__logo{
         z-index: 5;
+        @media (min-width: 767px) {
+            padding-top: 5px;
+        }
     }
 }
 

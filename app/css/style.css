@@ -12,6 +12,8 @@ body {
 }
 .blog__article-descr,
 .cards__hover-text,
+.contact-us__addresses-item,
+.contact-us__info,
 .description__text,
 .member__descr,
 .reviews__box-text,
@@ -1326,10 +1328,69 @@ body.lock {
   line-height: 172.72727%;
   margin-bottom: 15px
 }
+.blog__article-title:hover {
+  color: #62cc82
+}
 .blog__article-descr {
   display: block;
   font-size: 16px;
   line-height: 137.5%
+}
+.contact-us {
+  padding: 84px 0 90px;
+  background-color: #dde7e1
+}
+.contact-us__container {
+  max-width: 1035px;
+  padding: 0 20px;
+  margin: 0 auto
+}
+.contact-us__title {
+  margin-bottom: 75px;
+  text-align: center
+}
+.contact-us__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+.contact-us__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 38px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.contact-us__ico {
+  margin-right: 25px;
+  width: 60px;
+  height: 60px
+}
+.contact-us__info {
+  font-size: 40px;
+  line-height: 122.5%;
+  color: #000
+}
+.contact-us__info span {
+  border-bottom: 1px solid #62cc82
+}
+.contact-us__addresses-item {
+  font-size: 17px;
+  line-height: 123.52941%;
+  color: #000;
+  margin-bottom: 25px
+}
+.contact-us__addresses-item:last-child {
+  margin-bottom: 0
+}
+.contact-us__addresses-item span {
+  display: block;
+  text-transform: uppercase
 }
 @media (min-width:767px) {
   .header__logo {
@@ -1365,6 +1426,9 @@ body.lock {
   }
   .menu__list-item {
     margin-right: 85px
+  }
+  .contact-us__info {
+    font-size: 25px
   }
 }
 @media (max-width:1450px) {
@@ -1567,6 +1631,21 @@ body.lock {
   .reviews__quote {
     margin: 0 0 50px;
     max-width: 512px
+  }
+  .contact-us__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+  }
+  .contact-us__addresses {
+    text-align: center
   }
 }
 @media (max-width:767px) {
@@ -1798,6 +1877,12 @@ body.lock {
   .blog__article-img img {
     width: 100%
   }
+  .contact-us {
+    padding: 44px 0 50px
+  }
+  .contact-us__title {
+    margin-bottom: 40px
+  }
 }
 @media (max-width:576px) {
   .our-elephants__item img {
@@ -1816,6 +1901,18 @@ body.lock {
   }
   .reviews__quote::after {
     display: none
+  }
+  .contact-us__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .contact-us__ico {
+    margin: 0 0 20px 0
+  }
+  .contact-us__info {
+    font-size: 20px
   }
 }
 @media (max-width:426px) {

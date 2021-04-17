@@ -8,7 +8,7 @@ if (iconMenu) {
         iconMenu.classList.toggle('active');
         menuBody.classList.toggle('active');
     })
-}
+};
 
 
 // sliders

@@ -1,27 +1,32 @@
-
-@font-face{
-  font-family: 'Circe';
-  src: url('../fonts/Circe-Regular.woff2') format('woff2'),
-       url('../fonts/Circe-Regular.woff') format('woff');
-  font-weight: 400;
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/Circe-Regular.eot');
+  src: local('Myriad Pro'), 
+       url('../fonts/Circe-Regular.woff') format('woff'),
+       url('../fonts/Circe-Regular.ttf') format('truetype'),
+       url('../fonts/MyriadPro-Regular.svg') format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-display: swap;     
 }
 
-@font-face{
-  font-family: 'Circe';
-  src: url('../fonts/Circe-ExtraBold.woff2') format('woff2'),
-       url('../fonts/Circe-ExtraBold.woff') format('woff');
+@font-face {
+  font-family: 'Circe Regular';
+  src: url('../fonts/MyriadProRegular.eot');
+  src: local('Circe Regular'), 
+       url('../fonts/MyriadProRegular.woff') format('woff'),
+       url('../fonts/MyriadProRegular.ttf') format('truetype'),
+       url('../fonts/MyriadProRegular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circe-ExtraBold';
+  src: url('../fonts/Circe-ExtraBold.eot');
+  src: local('Circe Regular'), 
+       url('../fonts/Circe-ExtraBold.woff') format('woff'),
+       url('../fonts/Circe-ExtraBold.ttf') format('truetype'),
+       url('../fonts/Circe-ExtraBold.svg') format('svg');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;     
-}
-
-@font-face{
-  font-family: 'Myriad Pro';
-  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
-       url('../fonts/MyriadPro-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;     
 }

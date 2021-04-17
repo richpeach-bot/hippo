@@ -754,8 +754,12 @@ body.lock {
   font-size: 26px;
   line-height: 115.38462%;
   padding: 0 40px;
-  border: none;
-  cursor: pointer
+  border: 0!important;
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
 }
 .btn:hover {
   background-color: #4eaa6a
@@ -778,7 +782,11 @@ body.lock {
   font-size: 26px;
   line-height: 115.38462%;
   padding: 0 40px;
-  cursor: pointer
+  cursor: pointer;
+  outline: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
 }
 .btn-outline:hover {
   color: #4eaa6a;
@@ -1326,7 +1334,10 @@ body.lock {
   max-width: 381px;
   font-size: 22px;
   line-height: 172.72727%;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
 }
 .blog__article-title:hover {
   color: #62cc82
@@ -1374,10 +1385,19 @@ body.lock {
 .contact-us__info {
   font-size: 40px;
   line-height: 122.5%;
-  color: #000
+  color: #000;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s
+}
+.contact-us__info:hover {
+  color: #4eaa6a
 }
 .contact-us__info span {
   border-bottom: 1px solid #62cc82
+}
+.contact-us__info span:hover {
+  border-bottom: 1px solid #4eaa6a
 }
 .contact-us__addresses-item {
   font-size: 17px;
@@ -1391,6 +1411,42 @@ body.lock {
 .contact-us__addresses-item span {
   display: block;
   text-transform: uppercase
+}
+.mailing {
+  padding: 100px 0 70px;
+  background-color: #fbfbf7
+}
+.mailing__container {
+  max-width: 790px;
+  padding: 0 20px;
+  margin: 0 auto
+}
+.mailing__description {
+  margin-bottom: 58px
+}
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  text-align: center
+}
+.form__input {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 345px;
+  background-color: #fff;
+  padding: 0 20px;
+  height: 61px;
+  border: 1px solid #62cc82;
+  margin-bottom: 40px
+}
+.form__btn {
+  width: 370px
 }
 @media (min-width:767px) {
   .header__logo {
@@ -1883,6 +1939,36 @@ body.lock {
   .contact-us__title {
     margin-bottom: 40px
   }
+  .mailing {
+    padding: 50px 0 40px
+  }
+  .mailing__description {
+    margin-bottom: 40px
+  }
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .form__input {
+    margin-bottom: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    max-height: 35px;
+    width: 100%
+  }
+  .form__btn {
+    max-width: 345px;
+    width: 100%
+  }
 }
 @media (max-width:576px) {
   .our-elephants__item img {
@@ -1903,13 +1989,20 @@ body.lock {
     display: none
   }
   .contact-us__box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
+    margin-bottom: 25px
+  }
+  .contact-us__ico img {
+    width: 30px;
+    height: 30px
   }
   .contact-us__ico {
-    margin: 0 0 20px 0
+    margin: 0 20px 0 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content
   }
   .contact-us__info {
     font-size: 20px

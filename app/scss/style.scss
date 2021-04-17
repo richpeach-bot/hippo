@@ -782,6 +782,7 @@
             font-size: 22px;
             line-height: 38 / 22 * 100%;
             margin-bottom: 15px;
+            transition: all .3s;
             &:hover{
                 color: #62cc82;
             }
@@ -828,23 +829,28 @@
             align-items: center;
         }
     }
-    &__contacts {
-        // margin-right: 145px;
-    }
     &__box {
         display: flex;
         margin-bottom: 38px;
         align-items: center;
         @media (max-width:576px) {
-            flex-direction: column;
+            margin-bottom: 25px;
         }
     }
     &__ico {
         margin-right: 25px;
         width: 60px;
         height: 60px;
+        img{
+            @media (max-width:576px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
         @media (max-width:576px) {
-            margin: 0 0 20px 0;
+            margin: 0 20px 0 0;
+            width: fit-content;
+            height: fit-content;
         }
     }
     &__info {
@@ -852,6 +858,10 @@
         line-height: 49 / 40 * 100%;
         color: #000;
         @extend %myriadpro-regular;
+        transition: all .3s;
+        &:hover{
+            color: #4eaa6a;  
+        }
         @media (min-width:1200px){
             font-size: 25px;
         }
@@ -860,6 +870,9 @@
         }
         span{
             border-bottom: 1px solid #62cc82;
+            &:hover{
+                border-bottom: 1px solid #4eaa6a;
+            }
         }
     }
     &__addresses {
@@ -879,6 +892,59 @@
                 display: block;
                 text-transform: uppercase;
             }
+        }
+    }
+}
+
+.mailing{
+    padding: 100px 0 70px;
+    background-color: #fbfbf7;
+    @media (max-width: 767px) {
+        padding: 50px 0 40px;
+    }
+    &__container{
+        max-width: 790px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    &__description{
+        margin-bottom: 58px;
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input{
+        flex: 0 0 50%;
+        max-width: 345px;
+        background-color: #fff;
+        padding: 0 20px;
+        height: 61px;
+        border: 1px solid #62cc82;
+        margin-bottom: 40px;
+        @media (max-width: 767px) {
+            margin-bottom: 20px;
+            flex: 0 0 auto;
+            max-height: 35px;
+            width: 100%;
+        }
+    }
+    &__btn{
+        width: 370px;
+        @media (max-width: 767px) {
+            max-width: 345px;
+            width: 100%;
         }
     }
 }

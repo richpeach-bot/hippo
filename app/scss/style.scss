@@ -508,3 +508,116 @@
         }
     }
 }
+
+.team{
+    padding: 100px 0 50px;
+    @media (max-width: 767px) {
+        padding: 80px 0 35px;
+    }
+    @media (max-width: 320px) {
+        padding: 60px 0 35px;
+    }
+    &__description{
+        margin-bottom: 60px;
+        @media (max-width: 767px) {
+            margin-bottom: 45px;
+        }
+        @media (max-width: 320px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__members{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:1000px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+.member{
+    @media (max-width:1200px) {
+        max-width: 300px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__img{
+        position: relative;
+        margin-bottom: 45px;
+        @media (max-width:1200px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 25px;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        &:hover .member__hover{
+            opacity: 1;
+        }
+    }
+    &__hover{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#87e7a5, 0.7);
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 4;
+        transform: translate(-15px, -15px);
+        transition: 0.4s ease;
+        opacity: 0;
+        &-social{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__info{
+        text-align: center;
+    }
+    &__name{
+        font-size: 26px;
+        line-height: 38 / 26 *100%;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+    &__descr{
+        @extend %myriadpro-regular;
+        font-size: 16px;
+        line-height: 23 / 16 * 100%;
+        color: #000;
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.social-list{
+    display: flex;
+    &__item{
+        margin-right: 5px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        img {
+            width: 46px;
+            height: 46px;
+        }
+    }
+}

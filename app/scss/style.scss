@@ -644,6 +644,9 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+        @media (max-width:1450px){
+            justify-content: center;
+        }
         @media (max-width: 767px) {
             flex-wrap: nowrap;
             justify-content: start;
@@ -658,10 +661,15 @@
                 margin-right: 0;
             }
         }
+        @media (max-width:1450px){
+            margin: 15px;
+        }
         @media (max-width: 767px) {
             flex: 0 0 90%;
-            margin-right: 15px;
-            margin-bottom: 0;
+            margin: 0 20px 0 0;
+        }
+        @media (max-width: 320px) {
+            margin: 0 15px 0 0;
         }
     }
     &__img {
@@ -701,6 +709,91 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 30px;
+        }
+    }
+}
+
+.blog{
+    padding: 58px 0 100px;
+    text-align: center;
+    @media (max-width: 767px) {
+        padding: 38px 0 70px;
+    }
+    @media (max-width: 320px) {
+        padding: 38px 0 50px;
+    }
+    &__title{
+        margin-bottom: 70px;
+        @media (max-width: 767px) {
+            margin-bottom: 40px;
+        }
+    }
+    &__articles{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        @media (max-width: 1250px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__article{
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+        @media (max-width: 767px) {
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
+        &:last-child{
+            @media (max-width: 767px) {
+                margin: 0;
+            }
+        }
+        &-img{
+            position: relative;
+            img {
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+        }
+        &-date{
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            padding: 0 20px;
+            height: 47px;
+            display: inline-flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(#61cb81, .8);
+            @extend %сirce-extrabold;
+            font-size: 27px;
+            color: #fff;
+        }
+        &-title{
+            text-align: left;
+            max-width: 381px;
+            font-size: 22px;
+            line-height: 38 / 22 * 100%;
+            margin-bottom: 15px;
+            @media (max-width: 320px) {
+                font-size: 18px;
+            }
+        }
+        &-descr{
+            display: block;
+            font-size: 16px;
+            line-height: 22 / 16 * 100%;
+            @extend %myriadpro-regular;
+            @media (max-width: 320px) {
+                font-size: 14px;
+            }
         }
     }
 }

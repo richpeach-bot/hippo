@@ -4,11 +4,13 @@ body {
 }
 .about__item-num,
 .achievements__text,
+.blog__article-date,
 .cards__title,
 .hero__title {
   font-family: Circe,sans-serif;
   font-weight: 800
 }
+.blog__article-descr,
 .cards__hover-text,
 .description__text,
 .member__descr,
@@ -749,7 +751,12 @@ body.lock {
   height: 61px;
   font-size: 26px;
   line-height: 115.38462%;
-  padding: 0 40px
+  padding: 0 40px;
+  border: none;
+  cursor: pointer
+}
+.btn:hover {
+  background-color: #4eaa6a
 }
 .btn-outline {
   display: -webkit-inline-box;
@@ -768,7 +775,12 @@ body.lock {
   height: 61px;
   font-size: 26px;
   line-height: 115.38462%;
-  padding: 0 40px
+  padding: 0 40px;
+  cursor: pointer
+}
+.btn-outline:hover {
+  color: #4eaa6a;
+  border: 6px solid #4eaa6a
 }
 .header {
   position: fixed;
@@ -1258,6 +1270,67 @@ body.lock {
   font-size: 51px;
   line-height: 74.5098%
 }
+.blog {
+  padding: 58px 0 100px;
+  text-align: center
+}
+.blog__title {
+  margin-bottom: 70px
+}
+.blog__articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px
+}
+.blog__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 15px
+}
+.blog__article-img {
+  position: relative
+}
+.blog__article-date {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  padding: 0 20px;
+  height: 47px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(97,203,129,.8);
+  font-size: 27px;
+  color: #fff
+}
+.blog__article-title {
+  text-align: left;
+  max-width: 381px;
+  font-size: 22px;
+  line-height: 172.72727%;
+  margin-bottom: 15px
+}
+.blog__article-descr {
+  display: block;
+  font-size: 16px;
+  line-height: 137.5%
+}
 @media (min-width:767px) {
   .header__logo {
     padding-top: 5px
@@ -1302,6 +1375,14 @@ body.lock {
   .about__item-num {
     font-size: 100px
   }
+  .achievements__cards {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+  }
+  .achievements__card {
+    margin: 15px
+  }
 }
 @media (max-width:1350px) {
   .about__item {
@@ -1344,6 +1425,13 @@ body.lock {
   }
   .reviews__box-author {
     text-align: center
+  }
+  .blog__articles {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
   }
 }
 @media (max-width:1200px) {
@@ -1407,9 +1495,12 @@ body.lock {
     border: 4px solid #fff;
     height: 50px
   }
+  .btn-outline:hover {
+    border: 4px solid #4eaa6a
+  }
   .btn-outline {
     font-size: 15px;
-    border: 4px solid #61cb81;
+    border: 4px solid #4eaa6a;
     height: 50px
   }
   .hero__heading {
@@ -1686,8 +1777,26 @@ body.lock {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 90%;
     flex: 0 0 90%;
-    margin-right: 15px;
-    margin-bottom: 0
+    margin: 0 20px 0 0
+  }
+  .blog {
+    padding: 38px 0 70px
+  }
+  .blog__title {
+    margin-bottom: 40px
+  }
+  .blog__articles {
+    margin-bottom: 30px
+  }
+  .blog__article {
+    width: 100%;
+    margin: 0 0 20px 0
+  }
+  .blog__article:last-child {
+    margin: 0
+  }
+  .blog__article-img img {
+    width: 100%
   }
 }
 @media (max-width:576px) {
@@ -1776,5 +1885,17 @@ body.lock {
   }
   .achievements {
     padding: 15px 0 18px
+  }
+  .achievements__card {
+    margin: 0 15px 0 0
+  }
+  .blog {
+    padding: 38px 0 50px
+  }
+  .blog__article-title {
+    font-size: 18px
+  }
+  .blog__article-descr {
+    font-size: 14px
   }
 }

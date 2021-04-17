@@ -834,6 +834,36 @@ body.lock {
 .menu__list-link:hover {
   border-bottom: 1px solid #61cb81
 }
+.footer {
+  background-color: #3f4943;
+  padding: 67px 0 42px
+}
+.footer__container {
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto
+}
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.footer__social-list img {
+  width: 64px;
+  height: 64px
+}
+.footer__social-list .social-list__item {
+  margin-right: 10px
+}
+.footer__social-list .social-list__item:last-child {
+  margin-right: 0
+}
 .hero {
   background: #546f4e url(../images/hero-bg.jpg) center center;
   background-size: cover
@@ -1220,7 +1250,7 @@ body.lock {
 .social-list__item:last-child {
   margin-right: 0
 }
-.social-list__link img {
+.social-list__link svg {
   width: 46px;
   height: 46px
 }
@@ -1391,13 +1421,10 @@ body.lock {
   transition: all .3s
 }
 .contact-us__info:hover {
-  color: #4eaa6a
+  color: #61cb81
 }
 .contact-us__info span {
   border-bottom: 1px solid #62cc82
-}
-.contact-us__info span:hover {
-  border-bottom: 1px solid #4eaa6a
 }
 .contact-us__addresses-item {
   font-size: 17px;
@@ -1814,6 +1841,13 @@ body.lock {
   .menu__list-link {
     font-size: 24px
   }
+  .footer {
+    padding: 40px 0 20px
+  }
+  .footer__logo svg {
+    width: 68px;
+    height: 40px
+  }
   .hero__heading {
     padding: 160px 0 60px
   }
@@ -1971,6 +2005,10 @@ body.lock {
   }
 }
 @media (max-width:576px) {
+  .footer__social-list img {
+    width: 46px;
+    height: 46px
+  }
   .our-elephants__item img {
     width: 100%;
     -o-object-fit: cover;
@@ -2035,6 +2073,12 @@ body.lock {
     margin: 0 0 8px 0;
     width: 100%;
     padding: 25px 20px
+  }
+}
+@media (max-width:375px) {
+  .footer__social-list img {
+    width: 36px;
+    height: 36px
   }
 }
 @media (max-width:320px) {

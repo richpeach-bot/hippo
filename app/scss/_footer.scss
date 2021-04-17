@@ -1,0 +1,47 @@
+.footer{
+    background-color: #3f4943;
+    padding: 67px 0 42px;
+    @media (max-width: 767px){
+        padding: 40px 0 20px;
+    }
+    &__container{
+        max-width: 1360px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        svg{
+            @media (max-width: 767px) {
+                width: 68px;
+                height: 40px;
+            }
+            
+        }
+    }
+    &__social-list {
+        img{
+            width: 64px;
+            height: 64px;
+            @media (max-width: 576px){
+                width: 46px;
+                height: 46px;
+            }
+            @media (max-width: 375px){
+                width: 36px;
+                height: 36px;
+            }
+        }
+        & .social-list__item{
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    
+}

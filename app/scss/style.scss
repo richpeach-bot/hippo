@@ -3,6 +3,7 @@
 @import "fonts";
 @import "global";
 @import "header";
+@import "footer";
 
 .hero {
     background: #546f4e url("../images/hero-bg.jpg") center center;
@@ -614,7 +615,7 @@
         }
     }
     &__link {
-        img {
+        svg {
             width: 46px;
             height: 46px;
         }
@@ -860,7 +861,7 @@
         @extend %myriadpro-regular;
         transition: all .3s;
         &:hover{
-            color: #4eaa6a;  
+            color: #61cb81;  
         }
         @media (min-width:1200px){
             font-size: 25px;
@@ -870,9 +871,6 @@
         }
         span{
             border-bottom: 1px solid #62cc82;
-            &:hover{
-                border-bottom: 1px solid #4eaa6a;
-            }
         }
     }
     &__addresses {
@@ -948,3 +946,7 @@
         }
     }
 }
+
+
+
+

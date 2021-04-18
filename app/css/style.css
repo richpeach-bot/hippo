@@ -1006,6 +1006,9 @@ body.lock {
   margin-right: 0
 }
 @media (min-width:320px) {
+  .header__logo {
+    padding-top: 5px
+  }
   .cards__title {
     font-size: 20px;
     top: 20px;
@@ -1029,9 +1032,6 @@ body.lock {
   }
 }
 @media (min-width:767px) {
-  .header__logo {
-    padding-top: 5px
-  }
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1404,7 +1404,7 @@ body.lock {
     height: 10%;
     left: 0;
     top: 50%;
-    background-color: #fff;
+    background-color: #61cb81;
     -webkit-transform: scale(1) translate(0,-50%);
     -ms-transform: scale(1) translate(0,-50%);
     transform: scale(1) translate(0,-50%);
@@ -1419,7 +1419,7 @@ body.lock {
     height: 10%;
     left: 0;
     top: 0;
-    background-color: #fff;
+    background-color: #61cb81;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s
@@ -1431,7 +1431,7 @@ body.lock {
     height: 10%;
     left: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #61cb81;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s
@@ -1470,7 +1470,7 @@ body.lock {
     content: "";
     position: fixed;
     width: 100%;
-    height: 63px;
+    height: 68px;
     left: 0;
     top: 0;
     background: #191d21;

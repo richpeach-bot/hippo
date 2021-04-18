@@ -14,7 +14,7 @@
     }
     &__logo{
         z-index: 5;
-        @media (min-width: 767px) {
+        @media (min-width: 320px) {
             padding-top: 5px;
         }
     }
@@ -38,7 +38,7 @@
                 height: 10%;
                 left: 0;
                 top: 50%;
-                background-color: #fff;
+                background-color: #61cb81;
                 transform: scale(1) translate(0, -50%);
                 transition: all 0.3s;
             }
@@ -51,7 +51,7 @@
                 height: 10%;
                 left: 0;
                 top: 0;
-                background-color: #fff;
+                background-color: #61cb81;
                 transition: all 0.3s;
             }
         }
@@ -63,7 +63,7 @@
                 height: 10%;
                 left: 0;
                 bottom: 0;
-                background-color: #fff;
+                background-color: #61cb81;
                 transition: all 0.3s;
             }
         }
@@ -102,7 +102,7 @@
                 content: "";
                 position: fixed;
                 width: 100%;
-                height: 63px;
+                height: 68px;
                 left: 0;
                 top: 0;
                 background:#191d21;

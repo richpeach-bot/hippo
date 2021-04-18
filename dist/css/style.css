@@ -550,13 +550,10 @@ body.lock {
   -ms-grid-row-span: 2;
   grid-row-end: 3
 }
-<<<<<<< HEAD
 .gallery__box-6 {
   -ms-grid-column: 4;
   grid-column-start: 4
 }
-=======
->>>>>>> d502c0047fe7972b4349d39ab3144df941db6db8
 .our-elephants {
   padding: 54px 0 74px;
   text-align: center

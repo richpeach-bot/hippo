@@ -407,7 +407,8 @@
         }
     }
     &__box-6 {
-        @media (max-width: 14000px) {
+        grid-column-start: 4;
+        @media (max-width: 1400px) {
             grid-column-start: 2;
             grid-column-end: 4;
         }

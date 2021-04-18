@@ -484,23 +484,15 @@ body.lock {
 .services__cards {
   margin-bottom: 75px
 }
-.cards__card {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content
-}
 .cards__img {
   position: relative
 }
 .cards__title {
   color: #fff;
-  font-size: 51px;
   line-height: 74.5098%;
   text-align: left;
   position: absolute;
-  top: 91px;
-  left: 81px;
-  max-width: 300px;
+  max-width: 280px;
   z-index: 6
 }
 .cards__hover {
@@ -515,17 +507,14 @@ body.lock {
   z-index: 4;
   -webkit-transition: .4s ease;
   -o-transition: .4s ease;
-  transition: .4s ease
+  transition: .4s ease;
+  margin: 0 auto
 }
 .cards__hover-text {
   color: #fff;
-  font-size: 14px;
-  line-height: 25px;
+  max-width: 270px;
   text-align: left;
-  position: absolute;
-  top: 225px;
-  left: 79px;
-  max-width: 270px
+  position: absolute
 }
 .gallery {
   padding: 54px 0 50px
@@ -1017,6 +1006,29 @@ body.lock {
 .footer__social-list .social-list__item:last-child {
   margin-right: 0
 }
+@media (min-width:320px) {
+  .cards__title {
+    font-size: 20px;
+    top: 20px;
+    left: 20%
+  }
+  .cards__hover {
+    display: none
+  }
+  .cards__hover-text {
+    font-size: 18px;
+    left: 35%;
+    -webkit-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    transform: translateX(-40%)
+  }
+}
+@media (min-width:425px) {
+  .cards__title {
+    font-size: 30px;
+    top: 40px
+  }
+}
 @media (min-width:767px) {
   .header__logo {
     padding-top: 5px
@@ -1042,6 +1054,9 @@ body.lock {
     bottom: 0;
     height: 100%
   }
+  .cards__hover {
+    display: block
+  }
   .member__img:hover .member__hover {
     opacity: 1
   }
@@ -1065,6 +1080,37 @@ body.lock {
     margin-right: 65px
   }
 }
+@media (min-width:1023px) {
+  .swiper-button-prev::after {
+    display: none
+  }
+  .swiper-button-next::after {
+    display: none
+  }
+  .cards__hover-text {
+    font-size: 14px;
+    line-height: 25px;
+    top: 50%;
+    left: 79px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0)
+  }
+}
+@media (min-width:1024px) {
+  .cards {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 380px 1fr;
+    grid-template-columns: 1fr 380px 1fr
+  }
+  .cards__img img {
+    width: 100%;
+    display: block;
+    height: 100%
+  }
+}
 @media (min-width:1200px) {
   .menu__list {
     padding-right: 20px
@@ -1079,60 +1125,17 @@ body.lock {
     font-size: 25px
   }
 }
-@media (min-width:1919px) {
-  .swiper-button-prev::after {
-    display: none
-  }
-  .swiper-button-next::after {
-    display: none
-  }
+@media (min-width:1250px) {
   .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-  }
-  .cards__card {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1
-  }
-  .cards__img {
-    height: 100%
-  }
-  .cards__img img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover
+    -ms-grid-columns: 1fr 600px 1fr;
+    grid-template-columns: 1fr 600px 1fr
   }
 }
-@media (min-width:2000px) {
-  .cards {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-  }
-  .cards__card {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto
-  }
-}
-@media (max-width:1918px) {
-  .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+@media (min-width:1440px) {
+  .cards__title {
+    font-size: 51px;
+    top: 91px;
+    left: 81px
   }
 }
 @media (max-width:1550px) {
@@ -1271,6 +1274,10 @@ body.lock {
   }
 }
 @media (max-width:1023px) {
+  .cards__hover {
+    width: 35%;
+    left: -30%
+  }
   .gallery__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1531,25 +1538,11 @@ body.lock {
   .swiper-button-next::after {
     display: none
   }
-  .cards__card {
-    width: auto
-  }
-  .cards__img {
-    text-align: center
+  .services__cards {
+    margin-bottom: 45px
   }
   .cards__img img {
-    max-width: 100%
-  }
-  .cards__title {
-    font-size: 35px;
-    top: 40px;
-    left: 40%;
-    -webkit-transform: translateX(-40%);
-    -ms-transform: translateX(-40%);
-    transform: translateX(-40%)
-  }
-  .cards__hover {
-    display: none
+    width: 70%
   }
   .gallery {
     padding: 35px 0 25px

@@ -34,7 +34,7 @@ if (iconMenu) {
 
   // breakpoint where swiper will be destroyed
   // and switches to a dual-column layout
-  const breakpoint = window.matchMedia('(min-width:1919px)');
+  const breakpoint = window.matchMedia('(min-width:1023px)');
   let mySwiper;
 
   const breakpointChecker = function () {

@@ -329,12 +329,16 @@
                 left: 35%;
                 transform: translateX(-40%);
             }
+            @media (min-width: 768px) {
+                top: 50%;
+                transform: translateY(-50%);
+            }
             @media (min-width: 1023px) {
                 font-size: 14px;
                 line-height: 25px;
                 top: 50%;
                 left: 79px;
-                transform: translateX(0);
+                transform: translate(0, 0);
             }
         }
     }
@@ -808,6 +812,9 @@
     }
     &__description {
         margin-bottom: 65px;
+        @media (max-width: 767px) {
+            padding-right: 20px;
+        }
         @media (max-width: 426px) {
             margin-bottom: 35px;
         }

@@ -1060,6 +1060,12 @@ body.lock {
   .cards__hover {
     display: block
   }
+  .cards__hover-text {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+  }
   .member__img:hover .member__hover {
     opacity: 1
   }
@@ -1095,9 +1101,9 @@ body.lock {
     line-height: 25px;
     top: 50%;
     left: 79px;
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0)
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    transform: translate(0,0)
   }
 }
 @media (min-width:1024px) {
@@ -1622,6 +1628,9 @@ body.lock {
   }
   .achievements .container-larger {
     padding: 0 0 0 20px
+  }
+  .achievements__description {
+    padding-right: 20px
   }
   .achievements__cards {
     -ms-flex-wrap: nowrap;

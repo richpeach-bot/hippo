@@ -1024,9 +1024,10 @@ body.lock {
   .cards__hover-text {
     font-size: 18px;
     left: 35%;
-    -webkit-transform: translateX(-40%);
-    -ms-transform: translateX(-40%);
-    transform: translateX(-40%)
+    top: 50%;
+    -webkit-transform: translate(-40%,-50%);
+    -ms-transform: translate(-40%,-50%);
+    transform: translate(-40%,-50%)
   }
 }
 @media (min-width:425px) {
@@ -1059,12 +1060,6 @@ body.lock {
   }
   .cards__hover {
     display: block
-  }
-  .cards__hover-text {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%)
   }
   .member__img:hover .member__hover {
     opacity: 1

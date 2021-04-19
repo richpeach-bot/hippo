@@ -327,11 +327,8 @@
             @media (min-width: 320px) {
                 font-size: 18px;
                 left: 35%;
-                transform: translateX(-40%);
-            }
-            @media (min-width: 768px) {
                 top: 50%;
-                transform: translateY(-50%);
+                transform: translate(-40%, -50%);
             }
             @media (min-width: 1023px) {
                 font-size: 14px;
